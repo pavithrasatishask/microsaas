@@ -3,15 +3,15 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-from src.embeddings.vector_store import get_vector_store
-from src.models.schemas import (
+from embeddings.vector_store import get_vector_store
+from models.schemas import (
     ChangeRequest,
     ChangeValidationResponse,
     RepositoryEvidence,
     AnalysisResult
 )
-from src.utils.logger import get_logger
-from src.utils.config import get_settings
+from utils.logger import get_logger
+from utils.config import get_settings
 
 logger = get_logger()
 

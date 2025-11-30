@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-from src.models.schemas import (
+from models.schemas import (
     ChangeRequest,
     ChangeValidationResponse,
     ImpactAssessment,
@@ -11,8 +11,8 @@ from src.models.schemas import (
     RepositoryEvidence,
     AnalysisResult
 )
-from src.utils.logger import get_logger
-from src.utils.config import get_settings
+from utils.logger import get_logger
+from utils.config import get_settings
 
 logger = get_logger()
 

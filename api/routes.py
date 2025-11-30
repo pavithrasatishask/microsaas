@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from typing import Optional
 
-from src.models.schemas import (
+from models.schemas import (
     QuestionRequest,
     QuestionResponse,
     ChangeRequest,
@@ -9,9 +9,9 @@ from src.models.schemas import (
     ImpactAssessment,
     DecisionResponse
 )
-from src.services.analysis_service import AnalysisService
-from src.services.repository_service import RepositoryService
-from src.utils.logger import get_logger
+from services.analysis_service import AnalysisService
+from services.repository_service import RepositoryService
+from utils.logger import get_logger
 from pydantic import ValidationError
 
 logger = get_logger()

@@ -3,10 +3,10 @@ from typing import Optional
 import tempfile
 import shutil
 
-from src.loaders.repository_loader import RepositoryLoader
-from src.embeddings.vector_store import get_vector_store
-from src.utils.logger import get_logger
-from src.utils.github_clone import clone_github_repo, is_github_url
+from loaders.repository_loader import RepositoryLoader
+from embeddings.vector_store import get_vector_store
+from utils.logger import get_logger
+from utils.github_clone import clone_github_repo, is_github_url
 
 logger = get_logger()
 

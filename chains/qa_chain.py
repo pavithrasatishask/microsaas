@@ -5,10 +5,10 @@ from langchain_core.documents import Document
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-from src.embeddings.vector_store import get_vector_store
-from src.models.schemas import QuestionRequest, QuestionResponse, RepositoryEvidence, AnalysisResult
-from src.utils.logger import get_logger
-from src.utils.config import get_settings
+from embeddings.vector_store import get_vector_store
+from models.schemas import QuestionRequest, QuestionResponse, RepositoryEvidence, AnalysisResult
+from utils.logger import get_logger
+from utils.config import get_settings
 
 logger = get_logger()
 

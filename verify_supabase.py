@@ -8,8 +8,8 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.utils.config import get_settings
-from src.utils.logger import get_logger
+from utils.config import get_settings
+from utils.logger import get_logger
 from supabase import create_client
 
 logger = get_logger()

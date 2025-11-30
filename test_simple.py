@@ -10,10 +10,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 print("Testing imports...")
 
 try:
-    from src.utils.config import get_settings
+    from utils.config import get_settings
     print("✓ Config imported")
     
-    from src.utils.logger import get_logger
+    from utils.logger import get_logger
     print("✓ Logger imported")
     
     settings = get_settings()
@@ -21,7 +21,7 @@ try:
     
     # Try to import vector store (this will test Supabase connection)
     try:
-        from src.embeddings.vector_store import get_vector_store
+        from embeddings.vector_store import get_vector_store
         print("✓ Vector store module imported")
         
         # Try to initialize (this will test actual connection)

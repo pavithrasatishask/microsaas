@@ -9,8 +9,8 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.services.repository_service import RepositoryService
-from src.utils.logger import get_logger
+from services.repository_service import RepositoryService
+from utils.logger import get_logger
 
 logger = get_logger()
 

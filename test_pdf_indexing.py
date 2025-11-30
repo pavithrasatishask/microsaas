@@ -7,8 +7,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.services.repository_service import RepositoryService
-from src.utils.logger import get_logger
+from services.repository_service import RepositoryService
+from utils.logger import get_logger
 
 logger = get_logger()
 

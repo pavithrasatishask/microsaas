@@ -4,8 +4,8 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores.supabase import SupabaseVectorStore
 from supabase import create_client, Client
 
-from src.utils.logger import get_logger
-from src.utils.config import get_settings
+from utils.logger import get_logger
+from utils.config import get_settings
 
 logger = get_logger()
 

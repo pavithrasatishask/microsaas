@@ -12,14 +12,14 @@ print("=" * 60)
 
 try:
     print("1. Loading configuration...")
-    from src.utils.config import get_settings
-    from src.utils.logger import get_logger
+    from utils.config import get_settings
+    from utils.logger import get_logger
     
     logger = get_logger()
     print("✓ Configuration loaded")
     
     print("2. Initializing Flask app...")
-    from src.main import app
+    from main import app
     print("✓ Flask app created")
     
     print("3. Starting server on http://localhost:8000")

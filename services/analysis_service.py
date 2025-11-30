@@ -1,8 +1,8 @@
-from src.chains.qa_chain import RepositoryQAChain
-from src.chains.validation_chain import ChangeValidationChain
-from src.chains.impact_chain import ImpactAnalysisChain
-from src.chains.decision_chain import DecisionChain
-from src.models.schemas import (
+from chains.qa_chain import RepositoryQAChain
+from chains.validation_chain import ChangeValidationChain
+from chains.impact_chain import ImpactAnalysisChain
+from chains.decision_chain import DecisionChain
+from models.schemas import (
     QuestionRequest,
     QuestionResponse,
     ChangeRequest,
@@ -10,7 +10,7 @@ from src.models.schemas import (
     ImpactAssessment,
     DecisionResponse
 )
-from src.utils.logger import get_logger
+from utils.logger import get_logger
 
 logger = get_logger()
 

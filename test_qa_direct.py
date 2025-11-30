@@ -5,8 +5,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.chains.qa_chain import RepositoryQAChain
-from src.models.schemas import QuestionRequest
+from chains.qa_chain import RepositoryQAChain
+from models.schemas import QuestionRequest
 
 print("Testing QA Chain directly...")
 print("=" * 60)

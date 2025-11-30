@@ -38,7 +38,7 @@ cp .env.example .env
 
 3. **Index a repository** (via API or script):
 ```python
-from src.services.repository_service import RepositoryService
+from services.repository_service import RepositoryService
 
 service = RepositoryService()
 service.index_repository("/path/to/repository")

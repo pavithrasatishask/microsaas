@@ -92,7 +92,7 @@ After setting up the database:
 
 2. Test the connection by running:
    ```bash
-   python -c "from src.embeddings.vector_store import get_vector_store; vs = get_vector_store(); print('✓ Connected to Supabase')"
+   python -c "from embeddings.vector_store import get_vector_store; vs = get_vector_store(); print('✓ Connected to Supabase')"
    ```
 
 3. Start indexing your repository!
